@@ -12,25 +12,22 @@ class Line:
         Line.counter += 1
         
     def show(self):
-        print(self.a, self.b)
-        
+        print(p1.x,p1.y)
+        print(p2.x,p2.y)
+    
     @classmethod
     def how_many(cls):
         print(cls.counter)
 
     @staticmethod
     def is_horizontal(line):
-        if line.a.y == line.b.y:
-            return True
-        else:
-            return False
+         return line.a.y == line.b.y
+           
         
     @staticmethod
     def is_vertical (line):
-        if line.a.x == line.b.x:
-            return True
-        else:
-            return False
+        return line.a.x == line.b.x
+            
                
 if __name__ == "__main__":   
             
@@ -40,4 +37,5 @@ if __name__ == "__main__":
 
     print(l.is_horizontal(l))
     print(l.is_vertical(l))
-    print(l.how_many())
+    l.how_many()
+    l.show()
