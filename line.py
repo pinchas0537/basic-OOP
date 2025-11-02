@@ -21,7 +21,7 @@ class Line:
 
     @staticmethod
     def is_horizontal(line):
-         return line.a.y == line.b.y
+        return line.a.y == line.b.y
            
         
     @staticmethod
