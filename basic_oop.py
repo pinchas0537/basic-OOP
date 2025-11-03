@@ -129,6 +129,7 @@
     
 #     def set_time(self, sec):
 #         self.seconds = sec
+#         return self.seconds
     
 #     def get_time(self):
 #         mm = self.seconds // 60
@@ -137,3 +138,4 @@
     
 # t = Timer(200)
 # t.get_time()
+# print(t.set_time(250))
