@@ -2,7 +2,7 @@ class Agent:
     
     total_agents = 0
     
-    def __init__(self, code_name:str, clearance_level:int, ):
+    def __init__(self, code_name:str, clearance_level:int):
         self.code_name = code_name
         self._clearance_level = clearance_level
         Agent.total_agents += 1
